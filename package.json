@@ -36,7 +36,6 @@
     "format": "eslint --fix .",
     "flow": "flow",
     "flow-check": "flow check --show-all-errors",
-    "precommit": "lint-staged",
     "prepublish": "npm run clean && npm run build"
   },
   "files": [

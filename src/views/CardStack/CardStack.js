@@ -136,7 +136,7 @@ class CardStack extends React.Component<Props, State> {
     return (
       <View style={containerStyle}>
         <View style={styles.scenes}>
-          {scenes.map((s: *) => this._renderCard(s))}
+          {scenes.filter(scene => !scene.route.isPurged).map((s: *) => this._renderCard(s))}
         </View>
         {floatingHeader}
       </View>
